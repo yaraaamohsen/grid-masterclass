@@ -1,0 +1,316 @@
+*{box-sizing: border-box;}
+body, h3, html{
+    margin: 0;
+    line-height: 1.5rem;
+}
+:root{
+    --font1:  "Arvo", serif;
+    --font2: "Montserrat", sans-serif;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+    text-align: center;
+
+}
+.container img{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+h2{
+    font-family: var(--font1);
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    line-height: 3rem;
+}
+h3{
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+p{
+    font-family: var(--font2);
+    color: rgb(159, 163, 167);
+}
+h5{
+    font-size: 0.75rem;
+    color: rgb(159, 163, 167);
+    font-family: var(--font2);
+}
+h4{
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 251, 251);
+}
+h6{
+    letter-spacing: 0.15rem;
+    color: #F7F8F9;
+    margin: 0;
+    font-size: 0.5rem;
+}
+a{
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    color: #27b9c2;
+    font-family: var(--font1);
+}
+.keyboard a{
+    color: #FFC80E;
+    text-decoration: none;
+}
+.part1{
+    background-color:#F7F8F9;
+    grid-area: part1;
+}
+/* <mobile> */
+.mobile{
+    grid-area: mobile;
+}
+.mobile .container{
+    display: flex;
+}
+.mobile-content{
+    width: 40%;
+    align-self: center;
+}
+.mobile-image{
+    width: 60%;
+}
+.mobile .container{
+    padding-bottom: 0;
+}
+/* </mobile> */
+
+.keyboard{
+    background-color: #F05638;
+    grid-area: keyboard;
+
+}
+.playstation{
+    background-color: #F7F8F9;
+    grid-area: playstation;
+
+}
+.playstation h3{
+    padding: 1rem;
+}
+.playstation a{
+    color: #27B9C2;
+    padding-top: 100px;
+    text-decoration: none;
+}
+/* <device> */
+.device{
+    grid-area: device;
+}
+.device .container{
+    text-align: left;
+    display: flex;
+}
+.device-image{
+    width: 40%;
+    margin: auto;
+}
+.device-image img{
+    margin: 0;
+    padding-top: 1rem;
+}
+.device-content{
+    width: 40%;
+    margin: auto;
+    align-self: center;
+}
+/* </device> */
+
+/* <twitter> */
+.twitter{
+    background-color: #38D5F4;
+    grid-area: twitter;
+    display: flex;
+    overflow: hidden;
+
+}
+.twitter .container{
+    background-color: #35CFED;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.twitter .container img{
+    width: 15%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.twitter h4{
+    font-weight: 400;
+}
+/* </twitter> */
+
+/* <laptop> */
+.laptop{
+    background-color: #93B6B7;
+    background-image: url(../image/ux\ background.png);
+    background-position: bottom;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    grid-area: laptop;
+}
+.laptop .container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 0;
+    align-items: center;
+}
+.laptop-image img{
+    width: 80%;
+    margin: auto;
+}
+.laptop-block{
+   align-self: flex-start;
+}
+.laptop-block h6{
+    background-color: #F05638;
+    border-radius: 0.5rem;
+    line-height: 1.2rem;
+}
+
+/* <desk> */
+.desk{
+    background-color: #8f76bc;
+    grid-area: desk;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.desk .purple-bg{
+    background-color: #8166B0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1.5rem;
+}
+.desk .purple-bg img{
+    width: 80%;
+    margin: auto;
+}
+.desk .purple-bg .block{
+    background-color: #8A72B6;
+    border-radius: 2rem;
+    width: 50%;
+    margin: auto;
+}
+.desk-content a{
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #FFC80E;
+    color: black;
+    border-radius: 2rem;
+    font-family: var(--font2);
+}
+.desk-content{
+    padding-bottom: 2rem;
+}
+.desk-content p{
+    color: #F7F8F9;
+}
+/* </desk> */
+
+/* <much-better> */
+.much-better{
+    background-color: #F7F8F9;
+    grid-area: much-better;
+}
+.better-block{
+    background-color: #7BC424;
+    width: 20%;
+    margin: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.much-better .container{
+    padding: 3rem 0;
+}
+/* </much-better> */
+
+/* <television> */
+.tel{
+    background-color: #2C2C2C;
+    grid-area: tel;
+}
+.tel .container{
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.tel img{
+    width: 35%;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+.tel h3{
+    width: 35%;
+    color: #F7F8F9;
+    align-self: center;
+    text-align: left;
+    line-height: 2rem;
+
+}
+/* </television> */
+.grid{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas: 
+    "part1 part1"
+    "mobile mobile"
+    "keyboard playstation"
+    "device device"
+    "twitter desk"
+    "laptop desk"
+    "much-better much-better"
+    "tel tel";
+}
+
+@media (min-width:1024px){
+    .grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "mobile mobile part1 part1"
+        "keyboard device device desk"
+        "playstation laptop laptop desk"
+        "twitter much-better tel tel";
+    }
+    .grid>div{
+        display: flex;
+    }
+    .grid>div.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .twitter .container{
+        width: 350px;
+        height: 350px;
+    }
+    .desk .purple-bg{
+        width: 350px;
+        height: 350px;
+    }
+}
